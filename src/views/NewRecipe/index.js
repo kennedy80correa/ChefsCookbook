@@ -1,16 +1,16 @@
 import React from "react";
-import { View, Text, Button } from "react-native";
+import { View, Text } from "react-native";
 
 import styles from "./styles";
 
 //Componentes
 import Header from "../../components/Header";
 
-export default function Home({ navigation }) {
+export default function NewRecipe({ navigation }) {
   return (
     <View style={styles.container}>
       <Header />
-      <Text>Home</Text>
+      <Text>NewRecipe</Text>
     </View>
   );
 }

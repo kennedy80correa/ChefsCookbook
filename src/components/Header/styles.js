@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 5,
     borderBottomColor: "#FF2323",
     alignItems: "center",
+    top: 28,
   },
   cover: {
     width: "100%",
