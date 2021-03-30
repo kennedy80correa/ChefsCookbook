@@ -3,16 +3,15 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   header: {
     width: "100%",
-    height: 75,
+    height: 85,
     backgroundColor: "#FFF",
     borderBottomWidth: 5,
     borderBottomColor: "#FF2323",
     alignItems: "center",
-    top: 28,
   },
   cover: {
     width: "100%",
-    height: 70,
+    height: 80,
     position: "absolute",
   },
   logo: {
@@ -22,6 +21,7 @@ const styles = StyleSheet.create({
   logoPosition: {
     position: "absolute",
     left: 58,
+    top: 5,
   },
   leftIcon: {
     position: "absolute",

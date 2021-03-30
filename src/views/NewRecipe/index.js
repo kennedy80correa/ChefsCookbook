@@ -9,7 +9,7 @@ import Header from "../../components/Header";
 export default function NewRecipe({ navigation }) {
   return (
     <View style={styles.container}>
-      <Header />
+      <Header showBack={true} />
       <Text>NewRecipe</Text>
     </View>
   );
