@@ -6,7 +6,7 @@ import styles from "./styles";
 //Componentes
 import Header from "../../components/Header";
 
-export default function NewRecipe({ navigation }) {
+export default function NewRecipe() {
   return (
     <View style={styles.container}>
       <Header showBack={true} />

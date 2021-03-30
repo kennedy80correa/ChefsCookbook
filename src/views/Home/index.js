@@ -27,10 +27,34 @@ export default function Home({ navigation }) {
               horizontal={true}
               showsHorizontalScrollIndicator={false}
             >
-              <HorizontalCards imageUri={pork} name={"Pork ribs"} />
-              <HorizontalCards imageUri={pork} name={"Sushi"} />
-              <HorizontalCards imageUri={pork} name={"Apple pie"} />
-              <HorizontalCards imageUri={pork} name={"Cupcake"} />
+              <HorizontalCards
+                imageUri={pork}
+                name={"Pork ribs"}
+                onPress={() =>
+                  navigation.navigate("Profile", { nome: "Pork ribs" })
+                }
+              />
+              <HorizontalCards
+                imageUri={pork}
+                name={"Sushi"}
+                onPress={() =>
+                  navigation.navigate("Profile", { nome: "Sushi" })
+                }
+              />
+              <HorizontalCards
+                imageUri={pork}
+                name={"Apple pie"}
+                onPress={() =>
+                  navigation.navigate("Profile", { nome: "Apple pie" })
+                }
+              />
+              <HorizontalCards
+                imageUri={pork}
+                name={"Cupcake"}
+                onPress={() =>
+                  navigation.navigate("Profile", { nome: "Cupcake" })
+                }
+              />
             </ScrollView>
           </View>
         </View>
