@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Component } from "react";
 import { View, Text, ScrollView, Image } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 import styles from "./styles";
 
@@ -15,7 +16,8 @@ import sushi from "../../assets/sushi.png";
 import applepie from "../../assets/applePieL.png";
 import cupcake from "../../assets/cupcakeL.png";
 
-export default function Home({ navigation }) {
+export default function Home() {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <ScrollView scrollEventThrottle={16}>
@@ -33,29 +35,35 @@ export default function Home({ navigation }) {
               <HorizontalCards
                 imageUri={pork}
                 name={"Pork ribs"}
-                onPress={() =>
-                  navigation.navigate("Recipe", { nome: "Pork ribs" })
+                onClick={() =>
+                  navigation.navigate("Recipe", {
+                    nome: "Pork ribs",
+                  })
                 }
               />
               <HorizontalCards
                 imageUri={sushi}
                 name={"Sushi"}
                 onPress={() =>
-                  navigation.navigate("Profile", { nome: "Sushi" })
+                  this.props.navigation.navigate("Profile", { nome: "Sushi" })
                 }
               />
               <HorizontalCards
                 imageUri={applepie}
                 name={"Apple pie"}
                 onPress={() =>
-                  navigation.navigate("Profile", { nome: "Apple pie" })
+                  this.props.navigation.navigate("Profile", {
+                    nome: "Apple pie",
+                  })
                 }
               />
               <HorizontalCards
                 imageUri={cupcake}
                 name={"Cupcake"}
-                onPress={() =>
-                  navigation.navigate("Profile", { nome: "Cupcake" })
+                onClick={() =>
+                  this.props.navigation.navigate("Profile", {
+                    nome: "Cupcake",
+                  })
                 }
               />
             </ScrollView>

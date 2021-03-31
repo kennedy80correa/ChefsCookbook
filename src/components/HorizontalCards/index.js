@@ -12,7 +12,7 @@ import styles from "./styles";
 export default class HorizontalCars extends Component {
   render() {
     return (
-      <TouchableOpacity>
+      <TouchableOpacity onPress={this.props.onClick}>
         <View style={styles.card}>
           <View style={{ flex: 2 }}>
             <ImageBackground
