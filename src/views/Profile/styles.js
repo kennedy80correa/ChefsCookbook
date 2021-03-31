@@ -2,7 +2,6 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    width: "100%",
     alignItems: "center",
     justifyContent: "center",
   },
@@ -12,16 +11,18 @@ const styles = StyleSheet.create({
   bg: {
     position: "absolute",
     width: "100%",
-    height: 500,
+    height: 550,
   },
   photoContainer: {
-    width: 210,
-    height: 210,
+    width: 150,
+    height: 150,
     margin: 10,
+    alignItems: "center",
+    justifyContent: "center",
   },
   photo: {
-    width: 200,
-    height: 200,
+    width: 120,
+    height: 120,
     backgroundColor: "#7E7E7E",
     borderRadius: 100,
     alignItems: "center",
@@ -57,6 +58,7 @@ const styles = StyleSheet.create({
   editP: {
     flexDirection: "row",
     alignItems: "center",
+    marginVertical: 10,
     marginBottom: 20,
   },
   eIcon: {

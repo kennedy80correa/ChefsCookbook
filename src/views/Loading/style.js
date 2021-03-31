@@ -12,6 +12,9 @@ const styles = StyleSheet.create({
     height: 220,
     borderRadius: 180,
   },
+  activity: {
+    marginVertical: 30,
+  },
 });
 
 export default styles;

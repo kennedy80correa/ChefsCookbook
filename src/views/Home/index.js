@@ -10,13 +10,16 @@ import LatestCard from "../../components/LatestCard";
 import SearchBar from "../../components/SearchBar";
 
 //Cover
-import pork from "../../images/vegetables-bg.jpg";
+import pork from "../../assets/porkribs.png";
+import sushi from "../../assets/sushi.png";
+import applepie from "../../assets/applePieL.png";
+import cupcake from "../../assets/cupcakeL.png";
 
 export default function Home({ navigation }) {
   return (
     <View style={styles.container}>
       <ScrollView scrollEventThrottle={16}>
-        <Header showBack={false} />
+        <Header showBack={false} showHeader={true} />
         <View style={styles.search}>
           <SearchBar />
         </View>
@@ -31,25 +34,25 @@ export default function Home({ navigation }) {
                 imageUri={pork}
                 name={"Pork ribs"}
                 onPress={() =>
-                  navigation.navigate("Profile", { nome: "Pork ribs" })
+                  navigation.navigate("Recipe", { nome: "Pork ribs" })
                 }
               />
               <HorizontalCards
-                imageUri={pork}
+                imageUri={sushi}
                 name={"Sushi"}
                 onPress={() =>
                   navigation.navigate("Profile", { nome: "Sushi" })
                 }
               />
               <HorizontalCards
-                imageUri={pork}
+                imageUri={applepie}
                 name={"Apple pie"}
                 onPress={() =>
                   navigation.navigate("Profile", { nome: "Apple pie" })
                 }
               />
               <HorizontalCards
-                imageUri={pork}
+                imageUri={cupcake}
                 name={"Cupcake"}
                 onPress={() =>
                   navigation.navigate("Profile", { nome: "Cupcake" })

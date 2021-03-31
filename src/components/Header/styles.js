@@ -3,11 +3,10 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   header: {
     width: "100%",
-    height: 85,
+    height: 80,
     backgroundColor: "#FFF",
-    borderBottomWidth: 5,
-    borderBottomColor: "#FF2323",
     alignItems: "center",
+    marginTop: 20,
   },
   cover: {
     width: "100%",

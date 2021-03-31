@@ -13,7 +13,7 @@ import styles from "./styles";
 //Componentes
 import Header from "../../components/Header";
 
-import profileCover from "../../assets/profileCover.png";
+import profileCover from "../../assets/coverL.png";
 import plus from "../../assets/add-photo.png";
 import book from "../../assets/book.png";
 import editIcon from "../../assets/edit.png";
@@ -21,7 +21,7 @@ import editIcon from "../../assets/edit.png";
 export default function Profile({ edit }) {
   return (
     <View style={styles.container}>
-      <Header showBack={true} />
+      <Header showBack={true} showHeader={true} />
       <View style={styles.cover}>
         <ImageBackground source={profileCover} style={styles.bg} />
       </View>
