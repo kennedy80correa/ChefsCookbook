@@ -44,15 +44,13 @@ export default function Home() {
               <HorizontalCards
                 imageUri={sushi}
                 name={"Sushi"}
-                onPress={() =>
-                  this.props.navigation.navigate("Profile", { nome: "Sushi" })
-                }
+                onClick={() => navigation.navigate("Recipe", { nome: "Sushi" })}
               />
               <HorizontalCards
                 imageUri={applepie}
                 name={"Apple pie"}
-                onPress={() =>
-                  this.props.navigation.navigate("Profile", {
+                onClick={() =>
+                  navigation.navigate("Recipe", {
                     nome: "Apple pie",
                   })
                 }
@@ -61,7 +59,7 @@ export default function Home() {
                 imageUri={cupcake}
                 name={"Cupcake"}
                 onClick={() =>
-                  this.props.navigation.navigate("Profile", {
+                  navigation.navigate("Recipe", {
                     nome: "Cupcake",
                   })
                 }
@@ -73,10 +71,10 @@ export default function Home() {
           <View style={styles.latestView}>
             <Text style={styles.mainTitle}>The Latest</Text>
           </View>
-          <LatestCard />
-          <LatestCard />
-          <LatestCard />
-          <LatestCard />
+          <LatestCard onClick={() => navigation.navigate("Recipe")} />
+          <LatestCard onClick={() => navigation.navigate("Recipe")} />
+          <LatestCard onClick={() => navigation.navigate("Recipe")} />
+          <LatestCard onClick={() => navigation.navigate("Recipe")} />
         </View>
       </ScrollView>
     </View>
