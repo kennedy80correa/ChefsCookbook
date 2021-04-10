@@ -21,7 +21,7 @@ export default function Login({ navigation }) {
   return (
     <KeyboardAvoidingView style={{ flex: 1 }} behavior="padding" enable={true}>
       <View style={styles.container}>
-        <Header showBack={true} showHeader={true} />
+        <Header showBack={true} showHeader={true} navigation={navigation} />
         <View style={styles.cover}>
           <ImageBackground source={cover} style={styles.bg} />
         </View>
