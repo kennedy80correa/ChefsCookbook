@@ -115,7 +115,7 @@ function AppRoutes() {
       />
       <Tab.Screen
         name="Profile"
-        component={Login}
+        component={Profile}
         options={{
           tabBarIcon: ({ color, size }) => {
             return <Feather name="user" color={color} size={size} />;
