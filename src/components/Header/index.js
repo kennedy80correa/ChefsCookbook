@@ -9,6 +9,10 @@ import logo from "../../assets/logo-removedbg.png";
 import back from "../../assets/back.png";
 
 export default function Header({ showBack, showHeader, navigation }) {
+  function Back() {
+    navigation.navigate("Home");
+  }
+
   return (
     <View style={styles.header}>
       {showHeader && (
@@ -20,7 +24,7 @@ export default function Header({ showBack, showHeader, navigation }) {
         </>
       )}
       {showBack && (
-        <TouchableOpacity style={styles.leftIcon}>
+        <TouchableOpacity style={styles.leftIcon} onPress={Back}>
           <Image style={styles.leftIconImage} source={back}></Image>
         </TouchableOpacity>
       )}

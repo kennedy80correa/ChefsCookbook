@@ -14,11 +14,11 @@ import styles from "./styles";
 //Componentes
 import Header from "../../components/Header";
 
-export default function NewRecipe() {
+export default function NewRecipe({ navigation }) {
   return (
     <KeyboardAvoidingView style={{ flex: 1 }} behavior="padding" enable={true}>
       <ScrollView>
-        <Header showBack={true} showHeader={true} />
+        <Header showBack={true} showHeader={true} navigation={navigation} />
         <View style={styles.container}>
           <View style={styles.field}>
             <View style={styles.titleContainer}>
